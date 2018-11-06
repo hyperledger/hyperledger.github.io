@@ -28,7 +28,7 @@ There are a number of ways that you can get involved with the [Hyperledger commu
 
 * Start or join a [Hyperledger meetup](http://www.meetup.com/pro/hyperledger/)
 
-* Join the discussion on [Rocket.Chat](https://chat.hyperledger.org/)
+* Join the discussion on [Hyperledger Chat](https://chat.hyperledger.org/)
 
 * Participate in the [working group meetings](https://wiki.hyperledger.org/community/calendar-public-meetings)
 
