@@ -1,7 +1,10 @@
 theme: jekyll-theme-cayman
-title: Hyperledger
-description: Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies.
+title: "Hyperledger Foundation"
+description: "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies."
 show_downloads: false
 repository: hyperledger/hyperledger.github.io
+url: "https://hyperledger.github.io"
+twitter_username: hyperledger
+github_username: hyperledger
 github:
   is_project_page: false
