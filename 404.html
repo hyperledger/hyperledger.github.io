@@ -24,6 +24,14 @@
                 document.getElementById("body").innerHTML = "Cacti has moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
+            if (window.location.href.includes("hyperledger.github.io/firefly")) {
+                const redirectLocation = window.location.href.replace(
+                    "hyperledger.github.io/firefly",
+                    "hyperledger-firefly.github.io/firefly"
+                );
+                document.getElementById("body").innerHTML = "FireFly has moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
         }
     </script>
 </head>
