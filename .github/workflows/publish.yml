@@ -9,10 +9,12 @@ jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      with:
+        persist-credentials: false
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v2
+    - uses: actions/cache@2c8a9bd7457de244a408f35966fab2fb45fda9c8 # v6.0.0
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
@@ -20,18 +22,18 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Standard usage
-    - uses:  helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@c1527523361ec3ecc54b2371ddef44826e28c0f5 # v2.5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
     # Specify the Jekyll source location as a parameter
-    - uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@c1527523361ec3ecc54b2371ddef44826e28c0f5 # v2.5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         jekyll_src: '/'
 
     # Specify the target branch (optional)
-    - uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@c1527523361ec3ecc54b2371ddef44826e28c0f5 # v2.5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
